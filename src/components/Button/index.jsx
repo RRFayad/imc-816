@@ -6,8 +6,11 @@ class Button extends Component {
     render() {
 
         return (
-            <button className="button">
-                {this.props.banana}
+            <button 
+                children="Clique"
+                type="button"
+                {...this.props} 
+                className={`${this.props.className} button`}>
             </button>
         )
     }
